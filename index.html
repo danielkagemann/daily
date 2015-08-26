@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>daily</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <link rel="stylesheet" href="assets/css/weather-icons.min.css">
+   <link rel="stylesheet" href="assets/css/default.css">
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/handlebars.min.js"></script>
+   <script src="assets/js/moment.min.js"></script>
+   <script src="assets/js/application.js"></script>
+  
+  
+   <script id="weather-template" type="text/x-handlebars-template">
+      <h1>{{name}}</h1>
+      <h2><i class="wi wi-sunrise"></i>{{sys.sunrise}}</h2>
+      <h2><i class="wi wi-sunset"></i>{{sys.sunset}}</h2>
+      <h2><i class="wi {{weather.icon}}"></i>{{weather.description}}</h2>
+      
+      <h2><i class="wi wi-humidity"></i>{{main.humidity}}</h2>
+      <h2><i class="wi wi-barometer"></i>{{main.pressure}}</h2>
+      <h2>min. {{main.temp_min}} <i class="wi wi-celsius"></i></h2>
+      <h2>max. {{main.temp_max}} <i class="wi wi-celsius"></i></h2>
+      <h2>{{main.temp}} <i class="wi wi-celsius"></i></h2>
+   </script>
+</head>
+
+<body>
+
+   
+</body>
+
+</html>
