@@ -43,7 +43,7 @@ body {
 }
 .bg {
    position:absolute;
-   opacity:0.7;
+   opacity:0.6;
    top:0;
    left:0;
    width:100%;
@@ -70,7 +70,7 @@ body {
 
 .main--temp {
    font-size:2em;
-   color:#515151;
+   color:#333;
 }
 .main--temp small {
    font-size:0.6em;
@@ -78,6 +78,7 @@ body {
 .main--city {
    font-size:5em;
    text-transform: uppercase;
+   text-shadow: 0px 2px 3px #555;
 }
 .main--weather {
    font-size:1.5em;
