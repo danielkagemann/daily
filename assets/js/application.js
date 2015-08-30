@@ -99,6 +99,11 @@ var updater = {
                      img = 'url(assets/image/' + bgImage[json.weather[0].icon] + '.jpg)';
                      json.weather.icon = iconTable[json.weather[0].icon];
                      json.weather.description = json.weather[0].description;
+                     if (json.weather[0].icon.indexOf('n') !== -1) {
+                        $('.bg').addClass("nightmode");
+                     } else {
+                        $('.bg').removeClass("nightmode");
+                     }
                   }
                }
                // build template

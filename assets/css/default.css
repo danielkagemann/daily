@@ -26,6 +26,12 @@ body {
   50%       { transform: scale(1.3) rotate(2deg);}
 }
 
+.nightmode {
+   -webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
+}
+
 .progress {
    position:absolute;
    opacity:0.4;
